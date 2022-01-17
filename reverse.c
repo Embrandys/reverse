@@ -10,7 +10,7 @@ int n1;
 int main()
 {
     FILE *tablica;
-    tablica = fopen("C:\\Ciag.txt", "r");               // otwiera plik z ciagiem liczb
+    tablica = fopen("Ciag.txt", "r");               // otwiera plik z ciagiem liczb
 
     if (tablica == NULL){
         printf("Blad przy wczytywaniu pliku\n");
@@ -33,7 +33,7 @@ int main()
      i=0;
      n1=n;
      n=n-1;
-    while(i<n+1){
+    while(i<n){
         pom=a[i];
         a[i]=a[n];
         a[n]=pom;
